@@ -1,10 +1,10 @@
 // Add your doToElementsInArray() function here:
 
-doToElementsInArray(){
-
+function doToElementsInArray(array, callback) {
+  array.forEach(callback);
 }
 
 // Add your changeCompletely() function here:
-changeCompletely(){
-
+function changeCompletely(element, index, array) {
+  array[index] = Math.floor(Math.random() * 100 + 2).toString() + ` ${array[index]}s!!!`;
 }
